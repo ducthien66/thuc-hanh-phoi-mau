@@ -1,0 +1,182 @@
+/* RESET & COMMON STYLES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000000; /* Bước 6: Giữ màu chữ chính toàn trang là màu đen */
+    background-color: #00BFF2; /* Bước 2: Màu nền chuyển thành màu bậc 4 */
+    line-height: 1.6;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.fix-size {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.clear {
+    clear: both;
+}
+
+.left { float: left; }
+.right { float: right; }
+.c { text-align: center; }
+.hide { display: none; }
+
+/* Grid layout đơn giản */
+.c2 { width: 16.66%; }
+.c3 { width: 25%; }
+.c4 { width: 33.33%; }
+.c5 { width: 41.66%; }
+.c9 { width: 75%; }
+.c12 { width: 100%; }
+
+/* HEADER */
+header#top {
+    background-color: #00ADEE; /* Màu bậc 1 */
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+header#top a {
+    color: #ffffff;
+}
+
+/* NAVIGATION */
+nav {
+    background-color: #ffffff;
+    padding: 15px 0;
+    border-bottom: 2px solid #00B2EF;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    color: #00ADEE;
+}
+
+nav form input[type="search"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+nav form input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #00ADEE;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* BANNER */
+#banner {
+    background-color: #00B2EF; /* Màu bậc 2 */
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+#banner button {
+    background-color: #ffffff;
+    color: #00ADEE;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* MAIN CONTENT */
+#main {
+    background-color: #BDD7F7; /* Bước 4: Màu nền phần nội dung đổi thành màu bậc 7 */
+    padding: 30px 0;
+    color: #000000; /* Giữ chữ màu đen trên nền nhạt */
+}
+
+#main h2, #main h3 {
+    margin-bottom: 15px;
+}
+
+/* Bước 3: Thay đổi màu nền phần ON SALE/PREVIEW */
+.on-sale, .title {
+    background-color: #00ADEE; /* Màu bậc 1 (hoặc #00B2EF bậc 2) để tạo điểm nhấn */
+    color: #ffffff;
+    padding: 5px 10px;
+    display: inline-block;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+ul.preview li {
+    list-style: none;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-radius: 5px;
+    border-left: 4px solid #00ADEE;
+}
+
+.circle {
+    width: 30px;
+    height: 30px;
+    background-color: #00ADEE;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+blockquote {
+    background-color: #ffffff;
+    padding: 15px;
+    border-left: 5px solid #00ADEE;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+/* INFO SECTION */
+#info {
+    background-color: #00B2EF;
+    color: #ffffff;
+    padding: 30px 0;
+}
+
+#info form input[type="email"] {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+}
+
+#info form input[type="submit"] {
+    padding: 5px 10px;
+    background-color: #00ADEE;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+footer {
+    background-color: #C6E9FA; /* Bước 5: Đổi màu nền footer thành màu bậc 9 */
+    color: #000000;
+    padding: 15px 0;
+    font-size: 14px;
+}
